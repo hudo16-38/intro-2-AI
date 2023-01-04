@@ -1,0 +1,71 @@
+Functions are: sigmoid and relu
+train_err=array([0.81829483])
+test_err=array([0.22230778])
+total_err=array([0.4011039])
+*************************
+
+Functions are: sigmoid and tanh
+train_err=array([0.37733077])
+test_err=array([0.10222123])
+total_err=array([0.18475409])
+*************************
+
+Functions are: sigmoid and linear
+train_err=array([0.33415336])
+test_err=array([0.09193737])
+total_err=array([0.16460217])
+*************************
+
+Functions are: relu and sigmoid
+train_err=array([0.63317761])
+test_err=array([0.1729111])
+total_err=array([0.31099106])
+*************************
+
+Functions are: relu and tanh
+train_err=array([0.51537092])
+test_err=array([0.15295337])
+total_err=array([0.26167863])
+*************************
+
+Functions are: relu and linear
+train_err=array([0.55121722])
+test_err=array([0.15441661])
+total_err=array([0.27345679])
+*************************
+
+Functions are: tanh and sigmoid
+train_err=array([0.62685663])
+test_err=array([0.17302799])
+total_err=array([0.30917658])
+*************************
+
+Functions are: tanh and relu
+train_err=array([0.81829483])
+test_err=array([0.22230778])
+total_err=array([0.4011039])
+*************************
+
+Functions are: tanh and linear
+train_err=array([0.36629134])
+test_err=array([0.1021441])
+total_err=array([0.18138827])
+*************************
+
+Functions are: linear and sigmoid
+train_err=array([0.9927434])
+test_err=array([0.27207988])
+total_err=array([0.48827894])
+*************************
+
+Functions are: linear and relu
+train_err=array([0.81829483])
+test_err=array([0.22230778])
+total_err=array([0.4011039])
+*************************
+
+Functions are: linear and tanh
+train_err=array([0.79554702])
+test_err=array([0.21604676])
+total_err=array([0.38989684])
+*************************
