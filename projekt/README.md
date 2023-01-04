@@ -9,6 +9,7 @@ Tvorba modelu
 * Testovali sme tak, že vyskúšali každú funkciu na každej vrstve a vypočítali sme si výslednú chybu ako 0.3train_error + 0.7test_error a následne sme si vybrali najlepších kandidátov.
 * Trénovanie modelu prebiehalo v 50 epochách
 * Náhodné hodnoty sme genrovali z rozdelenia N(0, 1/3)
+* rýchlosť učenia alpha bola 0.1
 * Výsledné honoty boli nasledovné:
 
 f1, f2       | train_error | test_error | total_error
@@ -30,3 +31,13 @@ linear, tanh   |0.79554702   |0.21604676  |0.38989684
 lineárnu funkciu x + 1 (+1 preto, lebo výsledné hodnoty viac zasahujú do kladných hodnôt ako záporných)
 * Následne sme odskúšali modely, ktoré mali na výslednej vrstve lineárnu aktivačnú funkciu a otestovalie sme
 zvyšné 3 aktivačné funkcie na skrytej vrstve, aby sme zistili, ktorá bude najvhodnejšou
+* Počet učiacich sa epoch sme natavili teraz na 100 a alphu sme nechali rovnakú
+* Výsledné errory, ktoré sme dostali sú:
+
+fcia   | train_error | test_error | total_error
+-------|-------------|------------|------------
+sigmoid|0.45788102   |0.12326298  |0.22364839
+tanh   |0.43101548   |0.11254077  |0.20808318
+relu   |0.61450503   |0.16092987  |0.29700242
+
+* Preto sme sa rozhodli na skrytých vrstvách používať hyperbolický tangens
