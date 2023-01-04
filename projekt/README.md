@@ -1,7 +1,8 @@
 PROJEKT Z UUI
--------------------
+=============
 
-<h2>Tvorba modelu</h2>
+Tvorba modelu
+--------------
 * V prvom kole sme použili sieť, ktorá mala 1 skrytú vrstvu a na nej 16 neurónov
 * Chceli sme na nej zistiť najlepšiu kombináciu aktivačných funkcií
 * Ako aktivačné funkcie sme skúšali hyperbolický tangens, sigmoidovú funkciu, ReLU a nakoniec lineárnu funkciu
