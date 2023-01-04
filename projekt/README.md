@@ -7,6 +7,8 @@ Tvorba modelu
 * Chceli sme na nej zistiť najlepšiu kombináciu aktivačných funkcií
 * Ako aktivačné funkcie sme skúšali hyperbolický tangens, sigmoidovú funkciu, ReLU a nakoniec lineárnu funkciu
 * Testovali sme tak, že vyskúšali každú funkciu na každej vrstve a vypočítali sme si výslednú chybu ako 0.3train_error + 0.7test_error a následne sme si vybrali najlepších kandidátov.
+* Trénovanie modelu prebiehalo v 50 epochách
+* Náhodné hodnoty sme genrovali z rozdelenia N(0, 1/3)
 * Výsledné honoty boli nasledovné:
 
 f1, f2       | train_error | test_error | total_error
@@ -24,3 +26,7 @@ linear, sigmoid|0.9927434    |0.27207988  |0.48827894
 linear, relu   |0.81829483   |0.22230778  |0.4011039
 linear, tanh   |0.79554702   |0.21604676  |0.38989684
 
+* Ale keďže výsledné hodnoty nie sú z intervalu [0, 1], na výslednej vrstve sme sa rozhodli použiť
+lineárnu funkciu x + 1 (+1 preto, lebo výsledné hodnoty viac zasahujú do kladných hodnôt ako záporných)
+* Následne sme odskúšali modely, ktoré mali na výslednej vrstve lineárnu aktivačnú funkciu a otestovalie sme
+zvyšné 3 aktivačné funkcie na skrytej vrstve, aby sme zistili, ktorá bude najvhodnejšou
