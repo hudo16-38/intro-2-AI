@@ -12,7 +12,7 @@ Tvorba modelu
 * rýchlosť učenia alpha bola 0.1
 * Výsledné honoty boli nasledovné:
 
-f1, f2       | train_error | test_error | total_error
+f1, f2         | train_error | test_error | total_error
 ---------------|-------------|------------|------------
 sigmoid, relu  |0.81829483   |0.22230778  |0.4011039
 sigmoid, tanh  |0.37733077   |0.10222123  |0.18475409
@@ -41,3 +41,34 @@ tanh   |0.43101548   |0.11254077  |0.20808318
 relu   |0.61450503   |0.16092987  |0.29700242
 
 * Preto sme sa rozhodli na skrytých vrstvách používať hyperbolický tangens
+
+Zisťovanie počtu skrytých neurónov
+---------------
+* Keď už sme mali vybrané aktivačné funkcie, v ďalšom kroku sme chceli zistiť, aký počet neurónov je optimálny
+* Na testovanie sme opäť použili dvojvrstvovú sieť s rýchlosťou učenia 0.1
+* Aktivačná funkcia na skrytej vrstve bola tanh a na vonkajšej bola lineárna
+* Skúšali sme počty neurónov 8, 10, 12 ... 50
+* Výsledné errory sú zhrnuté v nasledovnej tabuľke:
+počet neurónov |total error
+8              |0.34141076
+10             |0.49546223
+12             |0.43364913
+14             |0.30725816
+16             |0.42649649
+18             |0.3175108
+20             |0.43872581
+22             |0.35504076
+24             |0.3953254
+26             |0.58908309
+28             |0.29286061
+30             |0.3819434
+32             |0.35375606
+34             |0.47723399
+36             |0.36689453
+38             |0.28084964
+40             |0.27341348
+42             |0.31580463
+44             |0.30428932
+46             |0.36510255
+48             |0.37062686
+50             |0.34816912
