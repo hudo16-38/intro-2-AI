@@ -45,7 +45,7 @@ relu   |0.61450503   |0.16092987  |0.29700242
 Zisťovanie počtu skrytých neurónov
 ---------------
 * Keď už sme mali vybrané aktivačné funkcie, v ďalšom kroku sme chceli zistiť, aký počet neurónov je optimálny
-* Na testovanie sme opäť použili dvojvrstvovú sieť s rýchlosťou učenia 0.1
+* Na testovanie sme opäť použili dvojvrstvovú sieť s rýchlosťou učenia 0.1 a počet epoch bol 100
 * Aktivačná funkcia na skrytej vrstve bola tanh a na vonkajšej bola lineárna
 * Skúšali sme počty neurónov 8, 10, 12 ... 50
 * Výsledné errory sú zhrnuté v nasledovnej tabuľke:
@@ -74,3 +74,8 @@ počet neurónov | total error
 46             |0.36510255
 48             |0.37062686
 50             |0.34816912
+
+* Z tohoto dôvodu sme sa rozhodli používať 40 neurónov na skrytých vrstvách
+
+Zisťovanie počtu skrytých verstiev
+----------------------
