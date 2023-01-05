@@ -49,8 +49,9 @@ Zisťovanie počtu skrytých neurónov
 * Aktivačná funkcia na skrytej vrstve bola tanh a na vonkajšej bola lineárna
 * Skúšali sme počty neurónov 8, 10, 12 ... 50
 * Výsledné errory sú zhrnuté v nasledovnej tabuľke:
+
 počet neurónov | total error
----------------|-----------
+---------------|------------
 8              |0.34141076
 10             |0.49546223
 12             |0.43364913
