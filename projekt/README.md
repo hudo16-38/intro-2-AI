@@ -75,7 +75,25 @@ počet neurónov | total error
 48             |0.37062686
 50             |0.34816912
 
-* Z tohoto dôvodu sme sa rozhodli používať 40 neurónov na skrytých vrstvách
+* Z tohto dôvodu sme sa rozhodli používať 40 neurónov na skrytých vrstvách
 
 Zisťovanie počtu skrytých verstiev
 ----------------------
+* V tomto kroku sme rozhodli otestovať, aký počet vrstiev je optimálny
+* Počas testovania sme zistili, že learning rate 0.1 je príliš veľký a vždy nám to preskočilo minimum pre error a pretiekli hodnoty, preto sme nastavili learning na 0.0005, s ktorým to už fungovalo bez problémov
+* Testovali sme počet vrstiev od 1 po 5 a testovali sme ich v 5-tich kolách
+* Výsledné errory uvádzame v nasledovnej tabuľke
+
+kolo | 1 vrstva  | 2 vrstvy  | 3 vrstvy  | 4 vrstvy  | 5 vrstiev
+-----|-----------|-----------|-----------|-----------|----------
+1    | 0.21465358| 0.05907851| 0.02545456| 0.01869486| 0.01975219
+2    | 0.21941243| 0.06750666| 0.0295333 | 0.02062135| 0.02980421
+3    | 0.21383517| 0.06896895| 0.03563489| 0.02252443| 0.01978567
+4    | 0.1917839 | 0.07220759| 0.02835257| 0.01713145| 0.01730435
+5    | 0.19986914| 0.05650462| 0.03012584| 0.01785095| 0.0201516
+avg  | 0.20791084| 0.06485327| 0.02982023| 0.01936461| 0.02135961
+
+* Keďže v priemere mali najmenšiu chybu 4 vrstvy, rohodli sme sa, že použijeme tento počet
+
+Zisťovanie vhodného learning rate
+-----------------
