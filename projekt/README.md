@@ -102,3 +102,12 @@ Zisťovanie vhodného learning rate
 * Najprv sme sa rozhodli otestovať learning rate od 0.0001 po 0.1 s krokom 0.005, ale pri veľa hodnotách to pretieklo, preto sme sa rozhodli otestovať od 0.0001 po 0.01 s krokom 0.0001
 * Výsledné errory pre sieť so 4 vrstvami po 40 nerónov a 300 epochami sme zakreslili do grafu: 
 ![learning rate](alpha_test.png)
+* Z toho dôvodu sme sa rozhodli použiť learning rate 0.0081
+
+
+Záverečné ladenie modelu
+------------------------
+* V poslednom kroku sme chceli zistiť, koľko epoch nám stačí na trénovanie
+* Z tréningu sme si teda uložili dáta o celkovej chybe a do grafu sme si zakreslili priemernú chybu pre daný počet epoch
+![epoch error](ep_err.png)
+* Z toho dôvodu sme sa rozhodli nastaviť počet epoch na učenie sa na 425, keďže to medzi 400 a 500 výrazne už neklesalo
