@@ -110,4 +110,12 @@ Záverečné ladenie modelu
 * V poslednom kroku sme chceli zistiť, koľko epoch nám stačí na trénovanie
 * Z tréningu sme si teda uložili dáta o celkovej chybe a do grafu sme si zakreslili priemernú chybu pre daný počet epoch
 ![epoch error](ep_err.png)
-* Z toho dôvodu sme sa rozhodli nastaviť počet epoch na učenie sa na 425, keďže to medzi 400 a 500 výrazne už neklesalo
+* Z toho dôvodu sme sa rozhodli nastaviť počet epoch na učenie sa na 450, keďže to už medzi 400 a 500 výrazne neklesalo
+
+
+Pre cvičiach
+-------------
+* Je pre Vás pripravený skript `main.py`, kde Vám stačí len zadať názov testovacieho súboru a program vypočíta chybu v danom pomere zo zadania
+* Pre druhé kolo stačí nastaviť konštantu `LOAD_PRETRAINED` na True, program si načíta predtrénovanú sieť a vypíše znovu chybu v danom pomere.
+* Po spustení evaluate po natrénovaní na všetkých dátach bola u mňa chyba cca 0.01
+* V súbore `pretrained.npy` sú uložené predtrénované matice, po otestovaní tohto modelu s rozdelenými dátami na trénovacie a testovacie mal priemernú chybu vypočítanú v danom pomere 0.013
