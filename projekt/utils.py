@@ -65,7 +65,7 @@ def sigmoid_derivative(x):
     return y*(1-y)
 
 def tanh_derivative(x):
-    return sech(x)**2
+    return 1 - tanh(x)**2
 
 def relu(x):
     return np.array([max(0, i) for i in x])
@@ -82,14 +82,19 @@ def linear_derivative(x):
 
 
 def split_data(inputs, outputs, prob):
+    """This function splits data approximately to the given ratio.
+    E.g. if prob is 0.8, data is split in ratio 80:20 (training part:testing part),
+    returns 4 arrays: training input, testing input, training output, testing output"""
     n = len(outputs)
 
-    probs = np.random.rand(n)
-    mask = probs <= prob
+    probs = np.random.rand(n) #generate random value for each data from standart uniform distribution
+    mask = probs <= prob #if value is <= prob, we put it to testig part
 
+    #split inputs
     train_input = inputs[mask]
     test_input = inputs[~mask]
 
+    #split outputs
     train_output = outputs[mask]
     test_output = outputs[~mask]
 
@@ -97,9 +102,14 @@ def split_data(inputs, outputs, prob):
 
 
 def read_data(file_name:str):
+    """loads data from 'file_name' file,
+    splits them into input and ouput parts and returns them"""
     data = np.loadtxt(file_name)
     inputs = data[:, :2]
     outputs = data[:, -1]
 
     return inputs, outputs
 #######################################################################
+
+
+

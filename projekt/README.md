@@ -119,3 +119,6 @@ Pre cvičiach
 * Pre druhé kolo stačí nastaviť konštantu `LOAD_PRETRAINED` na True, program si načíta predtrénovanú sieť a vypíše znovu chybu v danom pomere.
 * Po spustení evaluate po natrénovaní na všetkých dátach bola u mňa chyba cca 0.01
 * V súbore `pretrained.npy` sú uložené predtrénované matice, po otestovaní tohto modelu s rozdelenými dátami na trénovacie a testovacie mal priemernú chybu vypočítanú v danom pomere 0.013
+* Trénovanie u mňa trvalo pod 2 minúty
+* Po predikcii z dát vyzeralo porovnanie takto:
+![comparison](comparison.png)
