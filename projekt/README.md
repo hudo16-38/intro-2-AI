@@ -81,6 +81,8 @@ Zisťovanie počtu skrytých verstiev
 ----------------------
 * V tomto kroku sme rozhodli otestovať, aký počet vrstiev je optimálny
 * Počas testovania sme zistili, že learning rate 0.1 je príliš veľký a vždy nám to preskočilo minimum pre error a pretiekli hodnoty, preto sme nastavili learning na 0.0005, s ktorým to už fungovalo bez problémov
+* Počet trénovacích epoch bol 400
+* Pozmenili sme generovanie náhodných váh z Gaussovho rozdelenia na rovnomerné z intervalu [-1, 1], lebo nám generovalo niekedy hodnoty väčšie ako 1
 * Testovali sme počet vrstiev od 1 po 5 a testovali sme ich v 5-tich kolách
 * Výsledné errory uvádzame v nasledovnej tabuľke
 
@@ -97,3 +99,6 @@ avg  | 0.20791084| 0.06485327| 0.02982023| 0.01936461| 0.02135961
 
 Zisťovanie vhodného learning rate
 -----------------
+* Najprv sme sa rozhodli otestovať learning rate od 0.0001 po 0.1 s krokom 0.005, ale pri veľa hodnotách to pretieklo, preto sme sa rozhodli otestovať od 0.0001 po 0.01 s krokom 0.0001
+* Výsledné errory pre sieť so 4 vrstvami po 40 nerónov a 300 epochami sme zakreslili do grafu: 
+![learning rate](alpha_test.png)
